@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CppPP.dir/cp12/string1.cpp.o"
   "CMakeFiles/CppPP.dir/test.cpp.o"
   "CMakeFiles/CppPP.dir/cp12/sayings1.cpp.o"
+  "CMakeFiles/CppPP.dir/cp12/queue.cpp.o"
   "CppPP.pdb"
   "CppPP"
 )

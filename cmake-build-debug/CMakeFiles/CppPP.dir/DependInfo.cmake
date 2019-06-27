@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/lisheng/Developer/CLionProj/CppPP/cp12/queue.cpp" "/Users/lisheng/Developer/CLionProj/CppPP/cmake-build-debug/CMakeFiles/CppPP.dir/cp12/queue.cpp.o"
   "/Users/lisheng/Developer/CLionProj/CppPP/cp12/sayings1.cpp" "/Users/lisheng/Developer/CLionProj/CppPP/cmake-build-debug/CMakeFiles/CppPP.dir/cp12/sayings1.cpp.o"
   "/Users/lisheng/Developer/CLionProj/CppPP/cp12/string1.cpp" "/Users/lisheng/Developer/CLionProj/CppPP/cmake-build-debug/CMakeFiles/CppPP.dir/cp12/string1.cpp.o"
   "/Users/lisheng/Developer/CLionProj/CppPP/test.cpp" "/Users/lisheng/Developer/CLionProj/CppPP/cmake-build-debug/CMakeFiles/CppPP.dir/test.cpp.o"

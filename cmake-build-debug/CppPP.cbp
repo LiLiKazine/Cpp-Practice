@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/lisheng/Developer/CLionProj/CppPP/cp12/queue.cpp">
+			<Option target="CppPP"/>
+		</Unit>
+		<Unit filename="/Users/lisheng/Developer/CLionProj/CppPP/cp12/queue.h">
+			<Option target="CppPP"/>
+		</Unit>
 		<Unit filename="/Users/lisheng/Developer/CLionProj/CppPP/cp12/sayings1.cpp">
 			<Option target="CppPP"/>
 		</Unit>
