@@ -1,0 +1,3 @@
+/Users/lisheng/Developer/CLionProj/CppPP/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/lisheng/Developer/CLionProj/CppPP/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/lisheng/Developer/CLionProj/CppPP/cmake-build-debug/CMakeFiles/CppPP.dir
