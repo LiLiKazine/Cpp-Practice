@@ -123,6 +123,33 @@ CppPP/fast:
 	$(MAKE) -f CMakeFiles/CppPP.dir/build.make CMakeFiles/CppPP.dir/build
 .PHONY : CppPP/fast
 
+cp12/bank.o: cp12/bank.cpp.o
+
+.PHONY : cp12/bank.o
+
+# target to build an object file
+cp12/bank.cpp.o:
+	$(MAKE) -f CMakeFiles/CppPP.dir/build.make CMakeFiles/CppPP.dir/cp12/bank.cpp.o
+.PHONY : cp12/bank.cpp.o
+
+cp12/bank.i: cp12/bank.cpp.i
+
+.PHONY : cp12/bank.i
+
+# target to preprocess a source file
+cp12/bank.cpp.i:
+	$(MAKE) -f CMakeFiles/CppPP.dir/build.make CMakeFiles/CppPP.dir/cp12/bank.cpp.i
+.PHONY : cp12/bank.cpp.i
+
+cp12/bank.s: cp12/bank.cpp.s
+
+.PHONY : cp12/bank.s
+
+# target to generate assembly for a file
+cp12/bank.cpp.s:
+	$(MAKE) -f CMakeFiles/CppPP.dir/build.make CMakeFiles/CppPP.dir/cp12/bank.cpp.s
+.PHONY : cp12/bank.cpp.s
+
 cp12/queue.o: cp12/queue.cpp.o
 
 .PHONY : cp12/queue.o
@@ -240,6 +267,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... CppPP"
+	@echo "... cp12/bank.o"
+	@echo "... cp12/bank.i"
+	@echo "... cp12/bank.s"
 	@echo "... cp12/queue.o"
 	@echo "... cp12/queue.i"
 	@echo "... cp12/queue.s"
