@@ -9,6 +9,7 @@ public:
     void setTeacherName(std::string);
     std::string getCourseName() const;
     void displayMessage() const;
+    void determinClassAverage() const;
 
 private:
     std::string courseName;

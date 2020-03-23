@@ -16,6 +16,9 @@ void testGradeBook()
          << gradeBook1.getCourseName()
          << "\ngradeBook2's course name is: "
          << gradeBook2.getCourseName() << endl;
+
+    gradeBook1.displayMessage();
+    gradeBook1.determinClassAverage();
 }
 
 int main()

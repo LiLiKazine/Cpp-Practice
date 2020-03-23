@@ -7,7 +7,7 @@ GradeBook::GradeBook(string name) : courseName(name)
 {
 }
 
-GradeBook::GradeBook(string name, string teacher): courseName(name), teacherName(teacher)
+GradeBook::GradeBook(string name, string teacher) : courseName(name), teacherName(teacher)
 {
 }
 
@@ -26,7 +26,8 @@ void GradeBook::setCourseName(string name)
     }
 }
 
-void GradeBook::setTeacherName(string name) {
+void GradeBook::setTeacherName(string name)
+{
     teacherName = name;
 }
 
@@ -38,7 +39,24 @@ string GradeBook::getCourseName() const
 void GradeBook::displayMessage() const
 {
     cout << "Welcome to the grade book for\n"
-         << getCourseName() << "!\n" 
-         <<"This course is presented by: " << teacherName
+         << getCourseName() << "!\n"
+         << "This course is presented by: " << teacherName
          << endl;
+}
+
+void GradeBook::determinClassAverage() const
+{
+    int total = 0;
+    unsigned int gradeCounter = 1;
+    while (gradeCounter <= 10)
+    {
+        cout << "Enter grade: ";
+        int grade = 0;
+        cin >> grade;
+        total += grade;
+        gradeCounter++;
+    }
+    int average = total / 10;
+    cout << "\nTotal of all 10 grades is " << total << endl;
+    cout << "Class average is " << average << endl;
 }
