@@ -9,20 +9,26 @@ void testGradeBook();
 void calcuRate();
 int squareByValue(int);
 void squareByReference(int &);
+unsigned int boxVolume(unsigned int length = 1, unsigned int width = 1, unsigned int height = 1);
+unsigned long factorial(unsigned long);
 
 int main()
 {
     // testGradeBook();
     // calcuRate();
-    int x = 2, z = 4;
-    cout << "x= " << x << " before squareByValue\n"
-         << squareByValue(x) << endl;
-    cout << "x= " << x << " after squareByValue\n"
-         << endl;
+    // int x = 2, z = 4;
+    // cout << "x= " << x << " before squareByValue\n"
+    //      << squareByValue(x) << endl;
+    // cout << "x= " << x << " after squareByValue\n"
+    //      << endl;
 
-    cout << "z= " << z << " before squareByReference" << endl;
-    squareByReference(z);
-    cout << "z= " << z << " after squareByReference" << endl;
+    // cout << "z= " << z << " before squareByReference" << endl;
+    // squareByReference(z);
+    // cout << "z= " << z << " after squareByReference" << endl;
+    for (unsigned int i = 0; i <= 10; i++)
+    {
+        cout << setw(2) << i << "! = " << factorial(i) << endl;
+    }
 }
 
 void testGradeBook()
@@ -60,10 +66,25 @@ void calcuRate()
     }
 }
 
-int squareByValue(int number) {
+int squareByValue(int number)
+{
     return number * number;
 }
 
-void squareByReference( int &numberRef) {
+void squareByReference(int &numberRef)
+{
     numberRef *= numberRef;
+}
+
+unsigned int boxVolume(unsigned int length, unsigned int width, unsigned int height)
+{
+    return length * width * height;
+}
+
+unsigned long factorial(unsigned long number)
+{
+    if (number <= 1)
+        return 1;
+    else
+        return number * factorial(number - 1);
 }
