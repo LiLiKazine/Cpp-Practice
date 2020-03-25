@@ -5,6 +5,26 @@
 
 using namespace std;
 
+void testGradeBook();
+void calcuRate();
+int squareByValue(int);
+void squareByReference(int &);
+
+int main()
+{
+    // testGradeBook();
+    // calcuRate();
+    int x = 2, z = 4;
+    cout << "x= " << x << " before squareByValue\n"
+         << squareByValue(x) << endl;
+    cout << "x= " << x << " after squareByValue\n"
+         << endl;
+
+    cout << "z= " << z << " before squareByReference" << endl;
+    squareByReference(z);
+    cout << "z= " << z << " after squareByReference" << endl;
+}
+
 void testGradeBook()
 {
     GradeBook gradeBook1("CS101 Introduction to C++ Programming");
@@ -40,8 +60,10 @@ void calcuRate()
     }
 }
 
-int main()
-{
-    testGradeBook();
-    // calcuRate();
+int squareByValue(int number) {
+    return number * number;
+}
+
+void squareByReference( int &numberRef) {
+    numberRef *= numberRef;
 }
