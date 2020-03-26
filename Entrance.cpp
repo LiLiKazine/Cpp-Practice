@@ -1,6 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include <cmath>
+#include <array>
 #include "GradeBook.h"
 
 using namespace std;
@@ -11,6 +12,8 @@ int squareByValue(int);
 void squareByReference(int &);
 unsigned int boxVolume(unsigned int length = 1, unsigned int width = 1, unsigned int height = 1);
 unsigned long factorial(unsigned long);
+int recursiveMinimum(const int, const int);
+const array<int, 23> arr = {5, 29, 4, 123, 1, 5, 32, 1, 3, 9, 5, 2, 5, 2, 4, 8, 335, 189, 24, 73, 5, 1, 56};
 
 int main()
 {
@@ -25,10 +28,11 @@ int main()
     // cout << "z= " << z << " before squareByReference" << endl;
     // squareByReference(z);
     // cout << "z= " << z << " after squareByReference" << endl;
-    for (unsigned int i = 0; i <= 10; i++)
-    {
-        cout << setw(2) << i << "! = " << factorial(i) << endl;
-    }
+    // for (unsigned int i = 0; i <= 10; i++)
+    // {
+    //     cout << setw(2) << i << "! = " << factorial(i) << endl;
+    // }
+    cout << "Recursive minimum is: " << recursiveMinimum(0, arr.size() - 1) << endl;
 }
 
 void testGradeBook()
@@ -87,4 +91,13 @@ unsigned long factorial(unsigned long number)
         return 1;
     else
         return number * factorial(number - 1);
+}
+
+int recursiveMinimum(const int lo, const int hi)
+{
+    if (lo < hi)
+    {
+        return min(arr[lo], recursiveMinimum(lo + 1, hi));
+    }
+    return arr[hi];
 }
