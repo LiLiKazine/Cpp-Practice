@@ -14,6 +14,7 @@ unsigned int boxVolume(unsigned int length = 1, unsigned int width = 1, unsigned
 unsigned long factorial(unsigned long);
 int recursiveMinimum(const int, const int);
 const array<int, 23> arr = {5, 29, 4, 123, 1, 5, 32, 1, 3, 9, 5, 2, 5, 2, 4, 8, 335, 189, 24, 73, 5, 1, 56};
+size_t getSize(double *);
 
 int main()
 {
@@ -32,7 +33,12 @@ int main()
     // {
     //     cout << setw(2) << i << "! = " << factorial(i) << endl;
     // }
-    cout << "Recursive minimum is: " << recursiveMinimum(0, arr.size() - 1) << endl;
+    // cout << "Recursive minimum is: " << recursiveMinimum(0, arr.size() - 1) << endl;
+
+    double numbers[20];
+    cout << "The number of bytes in the array is " << sizeof(numbers);
+    cout << "\nThe number of bytes returned by getSize is "
+         << getSize(numbers) << endl;
 }
 
 void testGradeBook()
@@ -100,4 +106,9 @@ int recursiveMinimum(const int lo, const int hi)
         return min(arr[lo], recursiveMinimum(lo + 1, hi));
     }
     return arr[hi];
+}
+
+size_t getSize(double *ptr)
+{
+    return sizeof(ptr);
 }
