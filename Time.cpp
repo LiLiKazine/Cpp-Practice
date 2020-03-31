@@ -10,6 +10,11 @@ Time::Time()
 {
 }
 
+Time::Time(int hour, int minute, int second)
+{
+    setTime(hour, minute, second);
+}
+
 void Time::setTime(int h, int m, int s)
 {
     if ((h >= 0 && h < 24) && (m >= 0 && m <= 60) && (s >= 0 && s <= 60))
